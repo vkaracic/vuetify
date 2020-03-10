@@ -132,6 +132,7 @@ export default mixins(
       },
       on: {
         submit: (e: Event) => this.$emit('submit', e),
+        reset: (e: Event) => this.$emit('reset', e),
       },
     }, this.$slots.default)
   },
